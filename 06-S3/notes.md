@@ -534,6 +534,8 @@ If an object is not accessed for 30 days, it will move into infrequent access.
 
 This is good for objects that are unknown their access pattern.
 
+It has five different storage tiers.
+
 ### Object Lifecycle Management
 
 Intelligent-Tiering is used for objects where access is unknown.
