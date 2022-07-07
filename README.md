@@ -1547,6 +1547,7 @@ Retrieval methods:
 - Uses automation to remove overhead of moving objects.
 - Additional fee of $0.0025 per 1,000 objects tracked.
 - If an object is not accessed for 30 days, it will move into Standard-IA.
+- It has five different storage tiers.
 
 This is good for objects that are unknown their access pattern.
 
