@@ -1555,19 +1555,21 @@ This is good for objects that are unknown their access pattern.
 
 Intelligent-Tiering is used for objects where access patterns is unknown.
 A lifecycle configuration is a set of **rules** that consists of **actions**.
+These can apply on a **Bucket** or **group of objects**
 
 #### 1.4.10.1. Transition Actions
 
 Change the storage class over time such as:
 
-- Move an object from S3 to IA after 90 days
-- After 180 days move to Glacier
+- Move an object from S3 to IA after 30 days (30 days minimum from S3 to IA or One Zone-IA)
+- After another 30 days move to Glacier
 - After one year move to Deep Archive
 
 Objects must flow downwards, they can't flow in the reverse direction.
 
 #### 1.4.10.2. Expiration Actions
 
+Can be used to delete object, objects or object versions after certain time period. 
 Once an object has been uploaded and changed, you can purge older versions
 after 90 days to keep costs down.
 
