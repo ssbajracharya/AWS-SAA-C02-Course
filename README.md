@@ -1964,7 +1964,7 @@ or AWS Public Zones (S3, SQS, SNS, etc.)
 - IGW can be created and attached to no VPC.
 - Runs from within the AWS public zone.
 
-#### 1.5.5.3. Using IGW
+#### 1.5.5.3. Using IGW (IPv4 Addresses with a IGW)
 
 In this example, an EC2 instance has:
 
