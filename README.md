@@ -2359,7 +2359,9 @@ size increases.
     - maximum t-put for logs or media storage
   - Cold HDD (sc1)
 
-#### 1.6.5.1. General Purpose SSD (gp2)
+#### 1.6.5.1. General Purpose SSD (gp2 and gp3)
+
+**gp2**
 
 Uses a performance bucket architecture based on the IOPS it can deliver.
 The GP2 starts with 5,400,000 IOPS allocated. It is all available instantly.
@@ -2373,6 +2375,13 @@ This is the **baseline performance**
 
 Default for boot volumes and should be the default for data volumes.
 Can only be attached to one EC2 instance at a time.
+
+**gp3**
+
+SSD based but removes the credit bucket architecture of **gp2** for something
+much simpler. Every **gp3** volume regardless of size starts with standard
+3000 IOPS (i.e. 3000 16kb opeations per second) and can transfer 125 MiB/s. 
+gp3 cheaper than gp2. Can also pay extra cost for up to 16,000 IOPS or 1,000 MiB/s
 
 #### 1.6.5.2. Provisioned IOPS SSD (io1)
 

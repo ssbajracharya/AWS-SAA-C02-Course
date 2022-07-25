@@ -2274,7 +2274,7 @@ or AWS Public Zones (S3, SQS, SNS, etc.)</p>
 <li>IGW can be created and attached to no VPC.</li>
 <li>Runs from within the AWS public zone.</li>
 </ul>
-<h4 id="1553-using-igw">1.5.5.3. Using IGW</h4>
+<h4 id="1553-using-igw-ipv4-addresses-with-a-igw">1.5.5.3. Using IGW (IPv4 Addresses with a IGW)</h4>
 <p>In this example, an EC2 instance has:</p>
 <ul>
 <li>Private IP address of 10.16.16.20</li>
@@ -2718,7 +2718,8 @@ a major fault to go down.</li>
 </ul>
 </li>
 </ul>
-<h4 id="1651-general-purpose-ssd-gp2">1.6.5.1. General Purpose SSD (gp2)</h4>
+<h4 id="1651-general-purpose-ssd-gp2-and-gp3">1.6.5.1. General Purpose SSD (gp2 and gp3)</h4>
+<p><strong>gp2</strong></p>
 <p>Uses a performance bucket architecture based on the IOPS it can deliver.
 The GP2 starts with 5,400,000 IOPS allocated. It is all available instantly.</p>
 <p>You can consume the capacity quickly or slowly over the life of the volume.
@@ -2728,6 +2729,11 @@ Min of 100 IOPS added back to the bucket per second.</p>
 This is the <strong>baseline performance</strong></p>
 <p>Default for boot volumes and should be the default for data volumes.
 Can only be attached to one EC2 instance at a time.</p>
+<p><strong>gp3</strong></p>
+<p>SSD based but removes the credit bucket architecture of <strong>gp2</strong> for something
+much simpler. Every <strong>gp3</strong> volume regardless of size starts with standard
+3000 IOPS (i.e. 3000 16kb opeations per second) and can transfer 125 MiB/s.
+gp3 cheaper than gp2. Can also pay extra cost for up to 16,000 IOPS or 1,000 MiB/s</p>
 <h4 id="1652-provisioned-iops-ssd-io1">1.6.5.2. Provisioned IOPS SSD (io1)</h4>
 <p>You pay for capacity and the IOPs set on the volume.
 This is good if your volume size is small but need a lot of IOPS.</p>
