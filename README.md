@@ -3063,7 +3063,8 @@ complete state.
 
 ### 1.8.3. EC2 Instance Roles
 
-IAM roles are the best practice ways for services to be granted permissions.
+IAM roles are the best practice ways for AWS services to be granted permissions to other AWS services on your behalf.
+Allowing a service to assume a role grants the service the permissions that that role has.
 EC2 instance roles are roles that an instance can assume and anything
 running in that instance has the permissions that role grants.
 
