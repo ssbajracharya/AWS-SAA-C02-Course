@@ -3095,6 +3095,8 @@ Key facts
 Passing secrets into an EC2 instance is bad practice because anyone
 who has access to the meta-data has access to the secrets.
 
+The SSM Parameter store is a service which is part of Systems Manager which allows the storage and retrieval of parameters - string, stringlist or secure string.
+
 Parameter store allows for storage of **configuration** and **secrets**
 
 - Strings
