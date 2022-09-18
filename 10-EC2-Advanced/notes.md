@@ -86,6 +86,8 @@ a CFN resource
 
 #### cfn-init explained
 
+CFN-INIT is a powerful desired-state-like configuration engine which is part of the CFN suite of products.
+
 Starts off with a **cloud formation template**
 This has a logical resource within it which is to create an EC2 instance.
 
