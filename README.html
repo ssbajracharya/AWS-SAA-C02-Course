@@ -3454,7 +3454,8 @@ inside a CloudFormation template. You create it and supply a timeout value.</p>
 <p>This waits for a signal from the resource itself before moving to a create
 complete state.</p>
 <h3 id="183-ec2-instance-roles">1.8.3. EC2 Instance Roles</h3>
-<p>IAM roles are the best practice ways for services to be granted permissions.
+<p>IAM roles are the best practice ways for AWS services to be granted permissions to other AWS services on your behalf.
+Allowing a service to assume a role grants the service the permissions that that role has.
 EC2 instance roles are roles that an instance can assume and anything
 running in that instance has the permissions that role grants.</p>
 <p>Starts with an IAM role with a permissions policy.
