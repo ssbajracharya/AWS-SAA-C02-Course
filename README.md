@@ -3170,7 +3170,7 @@ If the hardware fails, the entire cluster will fail.
 - They can span VPC peers.
 - Requires a supported instance type.
 - Best practice to use the same type of instance (not mandatory).
-- Best practice to launch all instances at once (not mandatory).
+- Best practice to launch all instances at once (not mandatory ... very recommended).
 - This is the only way to achieve **10Gbps SINGLE stream performance**, other data metrics assume multiple streams.
 - Use cases: Performance, fast transfer speeds, and low consistent latency.
 
