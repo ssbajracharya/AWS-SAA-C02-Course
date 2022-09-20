@@ -3212,7 +3212,8 @@ specifically decide.
 - 7 partitions maximum for each AZ
 - Instances can be placed into a specific partition, or AWS can pick.
 - This is not supported on dedicated hosts.
-- Great for HDFS, HBase, and Cassandra
+- Great for topology aware applications like: HDFS, HBase, and Cassandra
+- Contains the impact of failure to part of an application
 
 ### 1.8.7. EC2 Dedicated Hosts
 
