@@ -3245,7 +3245,8 @@ SR-IOV-> It makes it so that a physical network interface insisde an EC2 host is
 The physical network interface is aware of the virtualization.
 Each instance is given exclusive access to one part of a physical network
 interface card.
-![image](https://user-images.githubusercontent.com/26990103/191575474-2f3b542c-f348-4b97-b4a4-cf09804d4b28.png)
+
+<img width="1047" alt="image" src="https://user-images.githubusercontent.com/26990103/191608788-4f04a928-490e-45fb-a8a1-25d1517db2d2.png">
 
 There is no charge for this and is available on most EC2 types.
 It allows for higher IO and lower host CPU usage
