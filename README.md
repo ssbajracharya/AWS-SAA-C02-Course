@@ -3246,7 +3246,7 @@ The physical network interface is aware of the virtualization.
 Each instance is given exclusive access to one part of a physical network
 interface card.
 
-<img width="1047" alt="image" src="https://user-images.githubusercontent.com/26990103/191608788-4f04a928-490e-45fb-a8a1-25d1517db2d2.png">
+![image](https://user-images.githubusercontent.com/26990103/191609245-68707671-f397-4ea4-a34f-45eed7460c5a.png)
 
 There is no charge for this and is available on most EC2 types.
 It allows for higher IO and lower host CPU usage
