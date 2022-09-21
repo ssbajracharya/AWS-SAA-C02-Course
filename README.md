@@ -3240,9 +3240,12 @@ matching host size.
 ### 1.8.8. Enhanced Networking
 
 Enhanced networking uses SR-IOV.
+Single Root-IO Virtualization.
+SR-IOV-> It makes it so that a physical network interface insisde an EC2 host is aware of virtuallization.
 The physical network interface is aware of the virtualization.
 Each instance is given exclusive access to one part of a physical network
 interface card.
+![image](https://user-images.githubusercontent.com/26990103/191575474-2f3b542c-f348-4b97-b4a4-cf09804d4b28.png)
 
 There is no charge for this and is available on most EC2 types.
 It allows for higher IO and lower host CPU usage
@@ -3252,7 +3255,7 @@ In general this provides lower latency.
 #### 1.8.8.1. EBS Optimized
 
 Historically network on EC2 was shared with the same network stack used
-for both data networking and EBS storage networking.
+for both **data networking** and **EBS storage** networking.
 
 EBS optimized instance means that some stack optimizations have taken place
 and dedicated capacity has been provided for that instance for EBS usage.
