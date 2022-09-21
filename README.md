@@ -3431,9 +3431,16 @@ So long as every key is unique, there is no real schema or structure needed.
 These are really fast and highly scalable.
 This is also used for **in memory caching**.
 
+**Exam Tips:** DB questions that present simple requirements or mention data 
+which are just names and values or pairs or keys and values. Questions which suggest
+no structure. 
+
 ##### 1.10.1.2.2. Wide Column Store
 
-DynamoDB is an example of wide column store database.
+![image](https://user-images.githubusercontent.com/26990103/191614183-9907db27-a696-43fe-8a05-7bc52f548ea7.png)
+
+
+DynamoDB is an example of wide column store database
 
 Each row or item has one or more keys.
 One key is called the partition key.
@@ -3473,15 +3480,25 @@ accessed, modified, and removed.
 
 ##### 1.10.1.2.5. Column Database (Redshift)
 
+![image](https://user-images.githubusercontent.com/26990103/191615108-1b8d8eb5-1f1f-47ee-aa9c-5e524fddcfcb.png)
+
 Instead of storing data in rows on disk, they store it based on columns.
 The data is the same, but it's grouped together on disk, based on
 column so every order value is stored together, every product item, color,
 size, and price are all grouped together.
 
-This is bad for transactional style processing, but great for reporting or when
-all values for a specific size are required.
+Row based DB are ideal when operarting on rows i.e. creating, deleting, updating rows. Thus, great for
+transactional processing like audit db, concact db, stock db. Things that deal with rows and items.
+
+
+Column based db inefficeint for tranaction but great for reporting (queies are on one particular column).
+
+**Redshift** - Take the data from OLTP DB (row based DB) and shift to column DB when reporting or analytics need to be performed. 
+
 
 ##### 1.10.1.2.6. Graph
+
+![image](https://user-images.githubusercontent.com/26990103/191616954-cbddfcc5-a551-481b-b821-a4f0c22ba011.png)
 
 Relationships between things are formally defined and stored along in the
 database itself with the data.
@@ -3497,6 +3514,8 @@ We might want to store the start date of any employment relationship.
 
 Can store massive amounts of complex relationships between data or between
 nodes in a database.
+
+**Exam Tips:** If mention of social media or complex relationship --> Graph DB.
 
 ### 1.10.2. Databases on EC2
 
